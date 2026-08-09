@@ -1,17 +1,32 @@
 # hodo
 
-A new Flutter project.
+Offline Todo list App 
 
-## Getting Started
+### Tech Stack 
 
-This project is a starting point for a Flutter application.
+- Flutter/dart
+- sqlite3
+- encryption
 
-A few resources to get you started if this is your first Flutter project:
+## File Structure 
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```
+├── assets
+│   ├── data
+│   ├── font
+│   │   └── Certificate.ttf
+│   ├── icon
+│   │   └── icon.png
+│   └── image
+|
+├── lib
+│   ├── components
+│   ├── main.dart
+│   └── Ui
+│       └── Home.dart
+|
+├── pubspec.lock
+├── pubspec.yaml
+├── README.md
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
