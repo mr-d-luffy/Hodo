@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
               fontSize: 75,
               color: Colors.black,
               fontFamily: "Certificate",
-              fontWeight: FontWeight.w400
+              fontWeight: FontWeight.w400,
             ),
           ),
         ),
