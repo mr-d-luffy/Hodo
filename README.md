@@ -1,27 +1,33 @@
 # hodo
 
-Offline Todo list App 
+Offline Todo list App
 
-### Tech Stack 
+### Tech Stack
 
 - Flutter/dart
 - sqlite3
 - encryption
 
-## File Structure 
+## File Structure
 
 ```
 ├── assets
 │   ├── data
+|   |   |-- hodobase.db
 │   ├── font
 │   │   └── Certificate.ttf
+|   |   |-- Comic Sans MS.ttf
+|   |   |-- PlusJakartaSans-Regular.ttf
 │   ├── icon
 │   │   └── icon.png
 │   └── image
 |
 ├── lib
 │   ├── components
+|   |   |__ DayDate.dart
+|   |
 │   ├── main.dart
+|   |
 │   └── Ui
 │       └── Home.dart
 |
