@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hodo/components/DayDate.dart';
 import 'package:intl/intl.dart';
 
 class Home extends StatefulWidget {
@@ -75,6 +76,10 @@ class _HomeState extends State<Home> {
                   letterSpacing: -0.2,
                 ),
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: DayDate(),
             ),
           ],
         ),
