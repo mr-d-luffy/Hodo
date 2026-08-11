@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hodo/components/DayDate.dart';
 import 'package:intl/intl.dart';
+import 'package:hodo/components/AlarmNotification.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -67,7 +68,7 @@ class _HomeState extends State<Home> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(right: 220),
+              padding: const EdgeInsets.only(right: 190),
               child: Text(
                 "$formattedCurrentDate",
                 style: TextStyle(
@@ -78,8 +79,13 @@ class _HomeState extends State<Home> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 10),
-              child: DayDate(),
+              padding: const EdgeInsets.only(top: 20),
+              child: Column(
+                children: [
+                  DayDate(),
+                  AlarmNotification(),
+                ],
+              ),
             ),
           ],
         ),
