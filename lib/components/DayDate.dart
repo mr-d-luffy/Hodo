@@ -12,6 +12,7 @@ class _DayDate extends State<DayDate> {
   late DateTime _selectedDate;
   late List<DateTime> _currentWeekDays;
 
+  // initial state for day date
   @override
   void initState() {
     super.initState();
@@ -19,6 +20,7 @@ class _DayDate extends State<DayDate> {
     _generateCurrentWeek();
   }
 
+  // generates 7 current week days and there dates for ui
   void _generateCurrentWeek() {
     final DateTime now = DateTime.now();
     final int daysToSubtract = now.weekday - 1;
@@ -44,6 +46,7 @@ class _DayDate extends State<DayDate> {
           final bool isSelected = DateUtils.isSameDay(date, _selectedDate);
 
           return GestureDetector(
+            // update UI 
             onTap: () {
               setState(() {
                 _selectedDate = date;
@@ -66,6 +69,7 @@ class _DayDate extends State<DayDate> {
 
                 const SizedBox(height: 12.0),
 
+                // UI for week day and date only list of 7
                 Container(
                   width: 42.0,
                   height: 42.0,
