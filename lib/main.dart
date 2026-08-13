@@ -15,9 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'HODO',
       theme: ThemeData(
-        colorScheme: .fromSeed(
-          seedColor: const Color.fromARGB(255, 238, 131, 69),
-        ),
+        colorScheme: .fromSeed(seedColor: const Color(0xFF9E6548)),
       ),
       home: const MyHomePage(),
     );

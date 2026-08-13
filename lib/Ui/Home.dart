@@ -51,7 +51,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
 
-                const SizedBox(width: 16.0,),
+                const SizedBox(width: 16.0),
 
                 // profile icon image
                 Padding(
@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(right: 190),
+              padding: const EdgeInsets.only(right: 230),
               child: Text(
                 "$formattedCurrentDate",
                 style: TextStyle(
@@ -84,9 +84,22 @@ class _HomeState extends State<Home> {
                 children: [
                   // week day and month number list of 7 monday to sunday
                   DayDate(),
-                  // reminder notification banner Ui component 
+                  // reminder notification banner Ui component
                   AlarmNotification(),
                 ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 400, left: 300),
+              child: FloatingActionButton(
+                onPressed: () => {
+                  setState(() {
+                    // code for floting action button of todo
+                  })
+                },
+                shape: const CircleBorder(),
+                backgroundColor: Color(0xFF5E2A12),
+                child: Icon(Icons.add, color: Colors.white),
               ),
             ),
           ],
