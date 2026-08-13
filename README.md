@@ -21,6 +21,8 @@ Offline Todo list App
 │   ├── icon
 │   │   └── icon.png
 │   └── image
+|   |   |-- bell.png
+|   |   |-- lion_avatar.png
 |
 ├── lib
 |   |-- backend
