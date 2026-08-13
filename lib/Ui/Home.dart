@@ -82,7 +82,9 @@ class _HomeState extends State<Home> {
               padding: const EdgeInsets.only(top: 20),
               child: Column(
                 children: [
+                  // week day and month number list of 7 monday to sunday
                   DayDate(),
+                  // reminder notification banner Ui component 
                   AlarmNotification(),
                 ],
               ),
