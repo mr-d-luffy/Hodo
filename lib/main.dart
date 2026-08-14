@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Ui/Home.dart';
+// import 'package:hodo/Ui/Home.dart';
+import 'package:hodo/components/NameDialog.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     Future.delayed(const Duration(seconds: 2), () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => Namedialog()));
     });
 
     return Scaffold(

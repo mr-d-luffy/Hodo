@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hodo/components/DayDate.dart';
 import 'package:intl/intl.dart';
 import 'package:hodo/components/AlarmNotification.dart';
+import 'package:hodo/components/NameDialog.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -13,7 +14,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    String name = "Mohit";
+    String name = HomeScreenState().userName;
 
     // date time object for dynamic date month, day
     DateTime now = DateTime.now();
@@ -95,7 +96,7 @@ class _HomeState extends State<Home> {
                 onPressed: () => {
                   setState(() {
                     // code for floting action button of todo
-                  })
+                  }),
                 },
                 shape: const CircleBorder(),
                 backgroundColor: Color(0xFF5E2A12),
